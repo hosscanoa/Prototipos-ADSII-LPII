@@ -1,56 +1,305 @@
 <!DOCTYPE html>
 <!-- saved from url=(0038)http://getbootstrap.com/examples/grid/ -->
 <html lang="es">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">    
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
 
-    <title>Recepción de Mecadería</title>
+		<title>Recepción de Mecadería</title>
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    
-    <script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
-    
-    <link  href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-    <link  href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css" rel="stylesheet">
+		<script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="//cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.js"></script>
 
-    <script>
-      $(document).ready(function(){
-        $('#tabla').DataTable();
-      });
-    </script>
+		<link  href="css/bootstrap.min.css" rel="stylesheet">
 
-  </head>
+		<link  href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css" rel="stylesheet">
 
-  <body>
-    <div class="container">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-      <h1><i class="fa fa-archive"></i>RECEPCIÓN DE MERCADERÍA</h1>
-      
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#paso1" data-toggle="tab">Paso 1</a></li>
-        <li class="disabled"><a  href="#paso2" data-toggle="tab">Paso 2</a></li>
-        <li class="disabled" ><a href="#paso3" data-toggle="tab">Paso 3</a></li>
-        <li class="disabled"><a href="#paso4" data-toggle="tab">Paso 4</a></li>
-      </ul>
-      <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade active in" id="paso1">
-        
-        </div>
-        <div class="tab-pane fade" id="paso2">
-         
-        </div>
-        <div class="tab-pane fade" id="paso3">
-          
-        </div>
-        <div class="tab-pane fade" id="paso4">
-         
-        </div>
-      </div>   
+		<script>
+			$(document).ready(function() {
+				$('#tabla').DataTable();
+			});
+		</script>
 
+	</head>
 
-    </div> <!-- /container -->
-</body>
+	<body>
+		<div class="container">
+
+			<h1><i class="fa fa-archive"></i>RECEPCIÓN DE MERCADERÍA</h1>
+			<hr />
+
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#paso1" data-toggle="tab">Paso 1</a>
+				</li>
+				<li class="disabled">
+					<a  href="#paso2" data-toggle="tab">Paso 2</a>
+				</li>
+				<li class="disabled" >
+					<a href="#paso3" data-toggle="tab">Paso 3</a>
+				</li>
+				<li class="disabled">
+					<a href="#paso4" data-toggle="tab">Paso 4</a>
+				</li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane fade active in" id="paso1">
+
+					<div class="well well-sm">
+
+						<h2 class="panel-title">Evaluacion de Mercadería para la Orden de Compra Nro:xxxxx</h2>
+
+						<div class="panel-body">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									Detalle de la Orden de Compra
+								</div>
+								<div class="panel-body">
+									<div class="col-lg-10">
+										<table id="tabla" class="display" cellspacing="0" width="100%">
+											<thead>
+												<tr>
+													<th>N°</th>
+													<th>Proveedor</th>
+													<th>Fecha Pedido</th>
+													<th>Fecha Entrega</th>
+													<th>Preparador Por</th>
+													<th>Estado</th>
+													<th></th>
+												</tr>
+											</thead>
+
+											<tfoot>
+												<tr>
+													<th>N°</th>
+													<th>Proveedor</th>
+													<th>Fecha Pedido</th>
+													<th>Fecha Entrega</th>
+													<th>Preparador Por</th>
+													<th>Estado</th>
+													<th></th>
+												</tr>
+											</tfoot>
+
+											<tbody>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Completada</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Rechazada</td>
+													<td></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Incompleta</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+												<tr>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>xxxxx</td>
+													<td>Pendiente</td>
+													<td><a href="xxxxx">Evaluar</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-lg-2">
+										<div class="panel panel-info">
+											<div class="panel-body">
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-1 control-label">Ver por estados</label>
+														<div class="col-lg-10">
+															<div class="radio">
+																<label>
+																	<input type="radio" name="estados" id="todos" value="todos" checked="true">
+																	Todo</label>
+															</div>
+
+															<div class="radio">
+																<label>
+																	<input type="radio" name="estados" id="pendiente" value="Pendiente">
+																	Pendiente </label>
+															</div>
+
+															<div class="radio">
+																<label>
+																	<input type="radio" name="estados" id="incompleto" value="Incompleto">
+																	Incompleto </label>
+															</div>
+
+															<div class="radio">
+																<label>
+																	<input type="radio" name="estados" id="cancelado" value="Cancelado">
+																	Cancelado </label>
+															</div>
+
+															<div class="radio">
+																<label>
+																	<input type="radio" name="estados" id="rechazado" value="Rechazado">
+																	Rechazado </label>
+															</div>
+
+															<div class="radio">
+																<label>
+																	<input type="radio" name="estados" id="completado" value="Completado">
+																	Completado </label>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="tab-pane fade" id="paso2">
+
+				</div>
+				<div class="tab-pane fade" id="paso3">
+
+				</div>
+				<div class="tab-pane fade" id="paso4">
+
+				</div>
+			</div>
+
+		</div>
+		<!-- /container -->
+	</body>
 </html>
